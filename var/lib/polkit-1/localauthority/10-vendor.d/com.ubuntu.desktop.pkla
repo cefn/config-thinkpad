@@ -36,12 +36,12 @@ ResultActive=yes
 [Disable hibernate by default in upower]
 Identity=unix-user:*
 Action=org.freedesktop.upower.hibernate
-ResultActive=no
+ResultActive=yes
 
 [Disable hibernate by default in logind]
 Identity=unix-user:*
 Action=org.freedesktop.login1.hibernate;org.freedesktop.login1.handle-hibernate-key;org.freedesktop.login1;org.freedesktop.login1.hibernate-multiple-sessions;org.freedesktop.login1.hibernate-ignore-inhibit
-ResultActive=no
+ResultActive=yes
 
 [Modify error reporting settings]
 Identity=unix-group:admin;unix-group:sudo
