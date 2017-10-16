@@ -52,3 +52,8 @@ ResultActive=yes
 Identity=unix-group:admin;unix-group:sudo
 Action=org.freedesktop.locale1.set-locale;org.freedesktop.locale1.set-keyboard;org.freedesktop.hostname1.set-static-hostname;org.freedesktop.hostname1.set-hostname
 ResultActive=yes
+
+[Re-enable hibernate for multiple users by default in logind]
+Identity=unix-user:*
+Action=org.freedesktop.login1.hibernate-multiple-sessions
+ResultActive=yes
