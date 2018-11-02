@@ -7,5 +7,5 @@
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
 # / was on /dev/sda5 during installation
 UUID=e6460a86-462d-4362-9147-441ca9c5b18e /               ext4    errors=remount-ro 0       1
-UUID=125fecd2-b478-4475-872a-778f919f1d6b    none    swap    sw      0   0
-#/dev/mapper/cryptswap1 none swap sw 0 0
+# swap was on /dev/sda6 during installation
+UUID=125fecd2-b478-4475-872a-778f919f1d6b none            swap    sw              0       0
