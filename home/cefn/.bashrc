@@ -118,3 +118,5 @@ fi
 
 #CH Override all prior PS1
 PS1='\h:\W\$ '
+export PATH="/home/cefn/.local/bin:$PATH"
+export PATH="$PATH:/snap/bin"
