@@ -120,3 +120,14 @@ fi
 PS1='\h:\W\$ '
 export PATH="/home/cefn/.local/bin:$PATH"
 export PATH="$PATH:/snap/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+label () {
+	echo -ne '\033]0;' $1 '\007'
+}
+
+#set -o vi
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
